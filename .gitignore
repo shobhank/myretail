@@ -1,0 +1,12 @@
+**target**
+.settings/*
+.classpath
+.project
+*.iml
+.idea
+**test-output/
+.ruby-version
+.ruby-gemset
+.rvmrc
+/Plan.md
+node_modules/

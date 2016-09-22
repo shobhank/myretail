@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="my-retail-test">
+
+	<test name="MyRetailTest">
+		<parameter name="id1" value="0321356683" />
+		<parameter name="id2" value= "0262033844" />
+	    <parameter name="id_invalid" value="0" />
+	    <parameter name="name1" value="Digital Fortress" />
+	    <parameter name="name2" value="Introduction to algorithms" />
+	    <parameter name="code_usd" value="USD" />
+	    <parameter name="value2" value="10.95" />
+	    <parameter name="code_inr" value="INR" />
+	    <parameter name="value3" value="670" />
+	    <parameter name="value4" value="13.95" />
+		<groups>
+			<run>
+   				<include name="DAO" />
+				<include name="CONTROLLER" />
+				<include name="SERVICE" />
+				<include name="CONFIG" />
+			</run>
+		</groups>
+
+		<packages>
+			<package name="org.myretail.*" />
+		</packages>
+
+	</test>
+
+</suite>
